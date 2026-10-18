@@ -1,8 +1,57 @@
 {
   "date": "20261009-20261018",
   "date_label": "2026-10-09 ~ 2026-10-18",
-  "generated_at": "2026-10-18 19:53:42 UTC",
+  "generated_at": "2026-10-18 20:08:31 UTC",
   "recommend_exists": true,
-  "run_count": 1,
-  "papers": []
+  "run_count": 2,
+  "papers": [
+    {
+      "paper_id": "2610.14685v1",
+      "route": "20261009-20261018/2610.14685v1-demiurge-forging-navigable-4d-worlds-via-autoregressive-video-rerendering",
+      "title": "Demiurge: Forging Navigable 4D Worlds via Autoregressive Video Rerendering",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "从单段视频合成新视角视频并对缺失区域做深度补全",
+      "first_seen_at": "2026-10-18 20:08:31 UTC",
+      "updated_at": "2026-10-18 20:08:31 UTC"
+    },
+    {
+      "paper_id": "2610.17610v1",
+      "route": "20261009-20261018/2610.17610v1-opendepth-repurposing-image-editing-priors-for-robust-open-world-monocular-depth-estimation",
+      "title": "OpenDepth: Repurposing Image Editing Priors for Robust Open-World Monocular Depth Estimation",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "单目深度估计为立体视差生成提供深度基础",
+      "first_seen_at": "2026-10-18 20:08:31 UTC",
+      "updated_at": "2026-10-18 20:08:31 UTC"
+    },
+    {
+      "paper_id": "2610.22371v1",
+      "route": "20261009-20261018/2610.22371v1-gen4p-video-generators-are-4d-perceivers",
+      "title": "Gen4P: Video Generators are 4D Perceivers",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "利用预训练视频深度先验从单目视频恢复四维几何",
+      "first_seen_at": "2026-10-18 20:08:31 UTC",
+      "updated_at": "2026-10-18 20:08:31 UTC"
+    }
+  ]
 }

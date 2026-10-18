@@ -1,16 +1,139 @@
 {
   "mode": "standard",
-  "generated_at": "2026-10-18T19:53:41.281706+00:00",
+  "generated_at": "2026-10-18T20:07:42.768798+00:00",
   "stats": {
     "mode": "standard",
-    "tag_count": 0,
+    "tag_count": 1,
     "deep_divecandidates": 0,
-    "deep_cap": null,
+    "deep_cap": 6,
     "deep_selected": 0,
-    "quick_candidates": 0,
-    "quick_skim_target": 10,
-    "quick_selected": 0
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
   },
   "deep_dive": [],
-  "quick_skim": []
+  "quick_skim": [
+    {
+      "id": "2610.14685v1",
+      "source": "arxiv",
+      "title": "Demiurge: Forging Navigable 4D Worlds via Autoregressive Video Rerendering",
+      "abstract": "Recent advances in video diffusion enable novel-view video synthesis from a single input video, supporting world modeling, embodied intelligence, and robotic simulation. However, existing methods process camera trajectories independently, lacking the cross-trajectory consistency needed for coherent, navigable 4D worlds. We introduce Demiurge, an autoregressive video rerendering pipeline built on a dynamic 4D point-cloud memory cache. It promotes cross-trajectory consistency through four components: (1) an appearance video diffusion model that synthesizes photorealistic novel-view videos conditioned on the 4D memory; (2) a memory-consistent video depth completion model that aligns known-region depths with cached geometry and completes missing regions, mitigating scale ambiguity and discontinuities during memory updates; (3) memory-aware dual-stream warping that provides high-fidelity visual guidance and occlusion cues for novel-view synthesis; and (4) geometry-aware video refinement that enhances perceptual quality. Extensive experiments demonstrate state-of-the-art performance and three key capabilities: coherent spatiotemporal lattice construction over dense multi-view trajectories; large-parallax video rerendering under challenging camera motions, including 180-degree rotations with no input-view overlap; and geometry-faithful outputs that can be directly optimized into high-quality 3D Gaussian Splatting representations with minimal artifacts. Project page: https://hanxinzhu-lab.github.io/demiurge_project_page/.",
+      "authors": [
+        "Hanxin Zhu",
+        "Jianqi Ma",
+        "Cong Wang",
+        "Zhihao Hu",
+        "Junyao Gao",
+        "Tianyu He",
+        "Junyan Lin",
+        "Jiayin Xiao",
+        "Jiateng Shou",
+        "Sen Liang",
+        "Weidong Zhang",
+        "Zhibo Chen",
+        "Jun Zhang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-10-10T07:57:50+00:00",
+      "link": "https://arxiv.org/pdf/2610.14685v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "query:Video-D-to-D"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "novel-view video synthesis from a single input video with depth completion of missing regions",
+      "llm_evidence_cn": "从单段视频合成新视角视频并对缺失区域做深度补全",
+      "llm_evidence": "从单段视频合成新视角视频并对缺失区域做深度补全",
+      "canonical_evidence": "从单段视频合成新视角视频并对缺失区域做深度补全",
+      "llm_tldr_en": "Demiurge rerenders navigable 4D worlds from one video by combining a 4D point-cloud memory with appearance video diffusion and memory-consistent depth completion, achieving cross-trajectory coherent novel views.",
+      "llm_tldr_cn": "现有单视频新视角合成方法独立处理各条相机轨迹，缺乏跨轨迹一致性，难以构建连贯可导航的四维世界。本文提出Demiurge，以动态四维点云记忆缓存为核心，结合外观视频扩散模型与记忆一致的视频深度补全模块，对齐已知区域深度并补全缺失几何。实验表明该方法能生成跨轨迹一致、可漫游的新视角视频。该工作为单目视频的视图合成与缺失区域修复提供了可借鉴的框架。",
+      "llm_tldr": "现有单视频新视角合成方法独立处理各条相机轨迹，缺乏跨轨迹一致性，难以构建连贯可导航的四维世界。本文提出Demiurge，以动态四维点云记忆缓存为核心，结合外观视频扩散模型与记忆一致的视频深度补全模块，对齐已知区域深度并补全缺失几何。实验表明该方法能生成跨轨迹一致、可漫游的新视角视频。该工作为单目视频的视图合成与缺失区域修复提供了可借鉴的框架。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Synthesizing left-right views for stereoscopic video from monocular input",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.17610v1",
+      "source": "arxiv",
+      "title": "OpenDepth: Repurposing Image Editing Priors for Robust Open-World Monocular Depth Estimation",
+      "abstract": "Recently, the integration of generative priors has revolutionized Monocular Depth Estimation (MDE), achieving state-of-the-art (SOTA) performance with remarkably high data efficiency. However, although methods based on Text-to-Image (T2I) models excel in general scenes, their efficacy degrades sharply when confronted with open-world environmental perturbations, such as illumination variations and adverse weather. Since T2I priors are optimized for semantic synthesis rather than preserving pixel-level structure, they struggle to decouple geometry from appearance under severe visual shifts, easily triggering structural hallucinations. Therefore, our core insight is to model open-world depth estimation as consistent geometric inference across multi-style images, fully leveraging the powerful structure-preserving editing priors of Image-to-Image (I2I) models. Based on this, we propose OpenDepth, a robust open-world MDE framework that introduces \"Intra-Domain Awareness\" -- the capability to map diverse stylistic inputs sharing identical geometry into a unified latent space. To achieve this, we first align shallow features within the Diffusion Transformer (DiT) to anchor degraded observations to unified geometric representations. Additionally, we introduce a joint RGB latent reconstruction task, requiring the model to recover clean RGB information from degraded inputs. This multi-stage strategy effectively decouples environmental style interference, compelling the model to focus strictly on underlying geometric recovery. Extensive evaluations show that OpenDepth sets new SOTA records for robust zero-shot depth estimation across standard and extreme weather benchmarks, demonstrating exceptional structural integrity and adaptability.",
+      "authors": [
+        "Mengke Zhang",
+        "Tianyi Yang",
+        "Xinzhuo Li",
+        "Anlong Ming"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-10-13T02:29:58+00:00",
+      "link": "https://arxiv.org/pdf/2610.17610v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "query:Video-D-to-D"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Monocular depth estimation providing disparity-ready depth for stereo synthesis",
+      "llm_evidence_cn": "单目深度估计为立体视差生成提供深度基础",
+      "llm_evidence": "单目深度估计为立体视差生成提供深度基础",
+      "canonical_evidence": "单目深度估计为立体视差生成提供深度基础",
+      "llm_tldr_en": "OpenDepth addresses monocular depth estimation under open-world perturbations by repurposing image-editing generative priors as consistent geometric inference, decoupling geometry from appearance and reducing structural hallucinations.",
+      "llm_tldr_cn": "现有基于文本到图像生成先验的单目深度估计在光照变化与恶劣天气等开放世界扰动下性能骤降，容易产生结构幻觉。作者提出 OpenDepth，将开放世界深度估计建模为一致的几何推理，复用图像编辑先验以解耦几何与外观。实验表明该方法在多种扰动场景下保持稳健的深度预测，显著优于依赖 T2I 先验的基线，为开放环境下的深度估计提供了新思路。",
+      "llm_tldr": "现有基于文本到图像生成先验的单目深度估计在光照变化与恶劣天气等开放世界扰动下性能骤降，容易产生结构幻觉。作者提出 OpenDepth，将开放世界深度估计建模为一致的几何推理，复用图像编辑先验以解耦几何与外观。实验表明该方法在多种扰动场景下保持稳健的深度预测，显著优于依赖 T2I 先验的基线，为开放环境下的深度估计提供了新思路。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Video depth estimation for stereo pair generation with high resolution and real time inference",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.22371v1",
+      "source": "arxiv",
+      "title": "Gen4P: Video Generators are 4D Perceivers",
+      "abstract": "We introduce Gen4P, a unified framework for recovering 4D geometry and motion from monocular video. We show that a pretrained video generator can be repurposed into a feed-forward 4D perceiver without iterative denoising. Building on on-demand querying, Gen4P processes clean video latents in a single encoder pass and predicts the requested 4D attributes through a lightweight cross-attention decoder. The on-demand query formulation enables flexible spatial sampling, and our proposed continuous-time queries further provide temporal flexibility. To strengthen geometric knowledge, we propose a straightforward plug-in solution by incorporating a pretrained video-depth LoRA as a frozen geometry prior, improving overall performance without adding extra trainable parameters. Gen4P achieves state-of-the-art or competitive performance on tasks of 3D point tracking, video depth and camera pose estimation. Qualitative results on in-the-wild videos illustrate its capability of tracking complex motion while maintaining the delicate structure. Together, these results demonstrate the potential of video generative pretraining for unified 4D perception. See https://gen4p.github.io for more visual results.",
+      "authors": [
+        "Yitong Xia",
+        "Zeren Jiang",
+        "Chuanxia Zheng"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-10-15T17:59:48+00:00",
+      "link": "https://arxiv.org/pdf/2610.22371v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "query:Video-D-to-D"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Monocular video 4D geometry recovery with pretrained video-depth prior",
+      "llm_evidence_cn": "利用预训练视频深度先验从单目视频恢复四维几何",
+      "llm_evidence": "利用预训练视频深度先验从单目视频恢复四维几何",
+      "canonical_evidence": "利用预训练视频深度先验从单目视频恢复四维几何",
+      "llm_tldr_en": "Gen4P repurposes a pretrained video generator as a feed-forward 4D perceiver that predicts geometry and motion from monocular video in a single encoder pass, aided by a frozen video-depth LoRA prior.",
+      "llm_tldr_cn": "从单目视频恢复四维几何与运动通常依赖迭代去噪或独立深度模型，效率与一致性受限。作者提出 Gen4P，把预训练视频生成器改造成前馈四维感知器，单次编码即通过轻量交叉注意力解码器输出所需四维属性，并以冻结的视频深度 LoRA 作为几何先验。实验表明该方法在保持高效率的同时提升几何与运动预测精度，为单目视频深度与结构估计提供新范式。",
+      "llm_tldr": "从单目视频恢复四维几何与运动通常依赖迭代去噪或独立深度模型，效率与一致性受限。作者提出 Gen4P，把预训练视频生成器改造成前馈四维感知器，单次编码即通过轻量交叉注意力解码器输出所需四维属性，并以冻结的视频深度 LoRA 作为几何先验。实验表明该方法在保持高效率的同时提升几何与运动预测精度，为单目视频深度与结构估计提供新范式。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Video depth estimation for stereo pair generation with high resolution and real time inference",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
 }
