@@ -25,3 +25,109 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: Video-D-to-D
+      description: 专注于单目 RGB 视频转双目立体视频，涵盖立体视频生成、深度估计、视图合成、遮挡修复与时序一致性等关键子技术。
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: monocular stereo conversion
+          keyword_cn: 单目立体转换
+          query: Converting monocular RGB videos into stereoscopic video pairs with binocular disparity
+        - keyword: stereoscopic video generation
+          keyword_cn: 立体视频生成
+          query: Generating stereoscopic video with temporally coherent left and right views
+        - keyword: stereo video inpainting
+          keyword_cn: 立体视频修复
+          query: Inpainting disoccluded and occluded regions in stereo video synthesis
+        - keyword: stereo view synthesis
+          keyword_cn: 立体视图合成
+          query: Synthesizing left-right views for stereoscopic video from monocular input
+        - keyword: temporally consistent stereo generation
+          keyword_cn: 时序一致立体生成
+          query: Generating temporally consistent stereoscopic video with high visual quality
+      intent_queries:
+        - query: Monocular RGB video to stereoscopic video conversion with temporally consistent left right view synthesis
+          query_cn: 单目 RGB 视频转双目立体视频，并进行时序一致的左右视图合成
+          enabled: true
+          source: manual
+          note: ''
+        - query: Occlusion aware stereo video inpainting for disoccluded regions after view synthesis
+          query_cn: 面向视图合成后遮挡区域的遮挡感知立体视频修复
+          enabled: true
+          source: manual
+          note: ''
+        - query: Video depth estimation for stereo pair generation with high resolution and real time inference
+          query_cn: 用于立体图像对生成的高分辨率实时视频深度估计
+          enabled: true
+          source: manual
+          note: ''
+        - query: Temporally consistent stereoscopic video generation with binocular disparity and good visual quality
+          query_cn: 具有双目视差和良好视觉质量的时序一致立体视频生成
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-10-18T19:45:47.940Z'
+    - tag: sia
+      description: 脉冲神经网络工业异常检测、缺陷定位及神经形态视觉学习
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: spiking anomaly detection
+          keyword_cn: 脉冲异常检测
+          query: Spiking neural networks for industrial visual anomaly detection and defect localization
+        - keyword: spike encoding
+          keyword_cn: 脉冲编码
+          query: Static image to spike encoding with rate coding and temporal coding for neuromorphic vision
+        - keyword: dynamic neuronal threshold
+          keyword_cn: 动态神经元阈值
+          query: Adaptive and heterogeneous neuronal thresholds for spiking neural network anomaly detection
+        - keyword: spiking autoencoder
+          keyword_cn: 脉冲自编码器
+          query: Spiking autoencoders and spiking reconstruction for unsupervised visual anomaly detection
+        - keyword: event-based anomaly detection
+          keyword_cn: 事件驱动异常检测
+          query: Event-based and neuromorphic visual anomaly detection with low-power spiking feature extraction
+      intent_queries:
+        - query: Spiking neural networks for industrial visual anomaly detection with anomaly scoring and defect localization
+          query_cn: 用于工业视觉异常检测的脉冲神经网络，包含异常评分与缺陷定位
+          enabled: true
+          source: manual
+          note: ''
+        - query: Static image to spike encoding and event based representation for neuromorphic visual anomaly detection
+          query_cn: 面向神经形态视觉异常检测的静态图像转脉冲编码与事件表示
+          enabled: true
+          source: manual
+          note: ''
+        - query: >-
+            Training free spiking neural network anomaly detection using adaptive neuronal thresholds and local learning
+            rules
+          query_cn: 使用自适应神经元阈值与局部学习规则的无训练脉冲神经网络异常检测
+          enabled: true
+          source: manual
+          note: ''
+        - query: >-
+            Spiking autoencoders and spiking feature extraction for low power surface defect detection and
+            reconstruction based anomaly localization
+          query_cn: 用于低功耗表面缺陷检测与基于重建异常定位的脉冲自编码器及脉冲特征提取
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-10-18T19:50:02.393Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
