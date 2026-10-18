@@ -68,7 +68,7 @@ subscriptions:
           enabled: true
           source: manual
           note: ''
-      updated_at: '2026-10-18T19:45:47.940Z'
+      updated_at: '2026-10-18T20:01:52.824Z'
     - tag: sia
       description: 脉冲神经网络工业异常检测、缺陷定位及神经形态视觉学习
       enabled: true
