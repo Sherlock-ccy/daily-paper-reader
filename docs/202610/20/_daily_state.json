@@ -1,0 +1,57 @@
+{
+  "date": "20261020",
+  "date_label": "",
+  "generated_at": "2026-10-20 22:10:20 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2610.18779v1",
+      "route": "202610/20/2610.18779v1-gad-geometry-attention-distillation-for-consistent-video-generation",
+      "title": "GAD: Geometry Attention Distillation for Consistent Video Generation",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "几何注意力蒸馏实现时序一致视频生成",
+      "first_seen_at": "2026-10-20 22:10:20 UTC",
+      "updated_at": "2026-10-20 22:10:20 UTC"
+    },
+    {
+      "paper_id": "2610.23732v1",
+      "route": "202610/20/2610.23732v1-esc-escaping-2d-diffusion-ambiguity-with-geometric-constraints-for-consistent-novel-view-synthesis",
+      "title": "ESC: Escaping 2D Diffusion Ambiguity with Geometric Constraints for Consistent Novel View Synthesis",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "结合相机射线与深度一致性的单目视图合成",
+      "first_seen_at": "2026-10-20 22:10:20 UTC",
+      "updated_at": "2026-10-20 22:10:20 UTC"
+    },
+    {
+      "paper_id": "2610.24506v1",
+      "route": "202610/20/2610.24506v1-sap-depth-scene-adaptive-probability-framework-for-self-supervised-monocular-depth-estimation",
+      "title": "SAP-Depth: Scene-Adaptive Probability Framework for Self-Supervised Monocular Depth Estimation",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "可用于立体图像对生成的自监督单目深度估计",
+      "first_seen_at": "2026-10-20 22:10:20 UTC",
+      "updated_at": "2026-10-20 22:10:20 UTC"
+    }
+  ]
+}

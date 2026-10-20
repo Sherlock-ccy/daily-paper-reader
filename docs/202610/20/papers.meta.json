@@ -1,0 +1,54 @@
+{
+  "label": "2026-10-20",
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T22:10:21",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202610/20/2610.18779v1-gad-geometry-attention-distillation-for-consistent-video-generation",
+      "section": "quick",
+      "title_en": "GAD: Geometry Attention Distillation for Consistent Video Generation",
+      "authors": "Junfeng Ni, Ziyu Zhu, Fan Jiang, Yu Liu, Chiyu Wang, Jiawei Zhang, Zhaoxu Sun, Mu Xu, Siyuan Huang, Yixin Chen",
+      "date": "2026-10-13",
+      "pdf": "https://arxiv.org/pdf/2610.18779v1",
+      "score": "6.0",
+      "evidence": "几何注意力蒸馏实现时序一致视频生成",
+      "tldr": "视频扩散模型能生成逼真短片，却难以在时间上保持场景几何与物体结构一致，现有视频注意力也无法稳定建立跨帧对应。为此，作者提出几何注意力蒸馏GAD，将冻结几何模型从干净视频中提取的跨帧对应关系迁移到视频注意力，并按噪声时间步选择学生层进行蒸馏。训练后视频注意力更一致地聚焦对应位置，在三种视频骨干上提升长程场景一致性与动态时序一致性；在Wan2.2 5B上跨帧匹配准确率至少提升30%。该方法无需额外推理模块，为高效一致视频世界模拟提供新思路。",
+      "tags": "query:video-d-to-d",
+      "abstract_en": "Video diffusion models generate visually compelling short-term sequences but often struggle to preserve scene geometry and object structure over time. In this paper, we first demonstrate that current video attention cannot identify reliable correspondences across frames, with responses dispersed across multiple regions even after recognizable scene structure has emerged. We argue that reliable cross-frame associations are essential for information exchange as scene structure forms in video generation. Thus, we introduce Geometry Attention Distillation (GAD), which transfers correspondences from a frozen geometry model's attention to video attention. Extracted from clean videos, these correspondences link the same static surface or moving object across frames. Since structure formation begins in deeper layers at higher noise and shallower layers at lower noise, we apply attention distillation at a student layer selected according to the noise timestep. After training, video attention focuses more consistently on corresponding locations. Experiments across all three video backbones demonstrate improved long-range scene consistency and dynamic temporal consistency, with geometric gains across generation lengths. On Wan2.2 5B, GAD improves cross-frame matching accuracy by at least 30% over the Wan baseline on both long-range benchmarks. Notably, GAD achieves these gains without additional inference modules, offering a promising approach to efficient and consistent video-based world simulation. Project page: https://fantasy-amap.github.io/GAD/.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/20/2610.23732v1-esc-escaping-2d-diffusion-ambiguity-with-geometric-constraints-for-consistent-novel-view-synthesis",
+      "section": "quick",
+      "title_en": "ESC: Escaping 2D Diffusion Ambiguity with Geometric Constraints for Consistent Novel View Synthesis",
+      "authors": "Ge Ya Luo, Daniel Severo, Brian Karrer, Christopher Pal, Adriana Romero-Soriano, Michal Drozdzal",
+      "date": "2026-10-14",
+      "pdf": "https://arxiv.org/pdf/2610.23732v1",
+      "score": "6.0",
+      "evidence": "结合相机射线与深度一致性的单目视图合成",
+      "tldr": "从单张图像生成3D一致的新视角仍是2D扩散模型的核心难题，在剧烈相机变化下尤为明显。ESC联合生成目标视角及其深度图，并以源图像、源深度和目标相机射线为条件，使扩散过程显式进行3D推理。方法进一步提出逐像素深度一致性约束，校验并强化生成视角间的3D一致性。实验显示其在视觉精度与空间对齐上优于现有方法，为单视图构建稳健3D世界模型提供路径。",
+      "tags": "query:video-d-to-d",
+      "abstract_en": "Generating 3D-consistent novel views from 2D diffusion models remains a fundamental challenge in computer vision. In this work, we introduce a framework that enhances geometric alignment for monocular view synthesis under drastic camera changes by jointly generating a target view and its corresponding depth map. By conditioning the diffusion pipeline on the single source image, source depth, and target camera rays, our approach forces the model to inherently reason in 3D space even under extreme viewpoint shifts. To guarantee spatial fidelity, we propose a novel per-pixel depth consistency constraint, which verifies and enforces 3D consistency across generated views. Our framework establishes a robust pipeline for geometrically consistent view synthesis, yielding superior visual accuracy and spatial alignment compared to current state-of-the-art methods. With this work, we pave the road towards robust 3D world models capable of understanding complex environments from a single view image.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/20/2610.24506v1-sap-depth-scene-adaptive-probability-framework-for-self-supervised-monocular-depth-estimation",
+      "section": "quick",
+      "title_en": "SAP-Depth: Scene-Adaptive Probability Framework for Self-Supervised Monocular Depth Estimation",
+      "authors": "Bowen He, Li Zhang, Yujie Chen, Chang Cheng",
+      "date": "2026-10-17",
+      "pdf": "https://arxiv.org/pdf/2610.24506v1",
+      "score": "6.0",
+      "evidence": "可用于立体图像对生成的自监督单目深度估计",
+      "tldr": "自监督单目深度估计常丢失细粒度细节，且难以适应多变场景结构。SAP-Depth 引入由可学习参数预测器驱动的动态 Bins 机制，依据输入图像上下文自适应估计场景特定深度分布。其 Bin-wise 概率分布解码器融合多尺度表示，预测稠密深度概率分布，提升边界锐度与结构恢复。在 KITTI 上精度优于现有方法并更好保留复杂边缘，Make3D 上验证了泛化性与鲁棒性。",
+      "tags": "query:video-d-to-d",
+      "abstract_en": "Self-supervised monocular depth estimation remains challenging due to the loss of fine-grained details and limited adaptability to varying scene structures. In this paper, we propose SAP-Depth, a novel architecture based on Scene-Adaptive Probabilistic. Unlike traditional methods, we introduce a Dynamic Bins mechanism powered by a Learnable Parameter Predictor, which adaptively estimates scene-specific depth distributions conditioned on the input image context. Furthermore, a Bin-wise Probability Distribution Decoder is designed to effectively fuse multi-scale representations to predict dense depth probability distributions, significantly enhancing boundary sharpness and structural recovery. Through the collaborative coupling of these proposed modules, our model achieves dynamic prediction of scene-specific depth distributions. Extensive experiments on the KITTI dataset show that SAP-Depth outperforms existing state-of-the-art methods in accuracy, particularly in its ability to better preserve complex edge details. Further, tests on the Make3D dataset validate the model's excellent generalization capability and robustness.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

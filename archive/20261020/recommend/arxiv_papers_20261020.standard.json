@@ -1,0 +1,144 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-20T22:09:17.342123+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 2,
+    "deep_divecandidates": 0,
+    "deep_cap": 7,
+    "deep_selected": 0,
+    "quick_candidates": 3,
+    "quick_skim_target": 12,
+    "quick_selected": 3
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2610.18779v1",
+      "source": "arxiv",
+      "title": "GAD: Geometry Attention Distillation for Consistent Video Generation",
+      "abstract": "Video diffusion models generate visually compelling short-term sequences but often struggle to preserve scene geometry and object structure over time. In this paper, we first demonstrate that current video attention cannot identify reliable correspondences across frames, with responses dispersed across multiple regions even after recognizable scene structure has emerged. We argue that reliable cross-frame associations are essential for information exchange as scene structure forms in video generation. Thus, we introduce Geometry Attention Distillation (GAD), which transfers correspondences from a frozen geometry model's attention to video attention. Extracted from clean videos, these correspondences link the same static surface or moving object across frames. Since structure formation begins in deeper layers at higher noise and shallower layers at lower noise, we apply attention distillation at a student layer selected according to the noise timestep. After training, video attention focuses more consistently on corresponding locations. Experiments across all three video backbones demonstrate improved long-range scene consistency and dynamic temporal consistency, with geometric gains across generation lengths. On Wan2.2 5B, GAD improves cross-frame matching accuracy by at least 30% over the Wan baseline on both long-range benchmarks. Notably, GAD achieves these gains without additional inference modules, offering a promising approach to efficient and consistent video-based world simulation. Project page: https://fantasy-amap.github.io/GAD/.",
+      "authors": [
+        "Junfeng Ni",
+        "Ziyu Zhu",
+        "Fan Jiang",
+        "Yu Liu",
+        "Chiyu Wang",
+        "Jiawei Zhang",
+        "Zhaoxu Sun",
+        "Mu Xu",
+        "Siyuan Huang",
+        "Yixin Chen"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-10-13T17:33:16+00:00",
+      "link": "https://arxiv.org/pdf/2610.18779v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "keyword:sia",
+        "query:Video-D-to-D"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "geometry attention distillation for temporally consistent video generation",
+      "llm_evidence_cn": "几何注意力蒸馏实现时序一致视频生成",
+      "llm_evidence": "几何注意力蒸馏实现时序一致视频生成",
+      "canonical_evidence": "几何注意力蒸馏实现时序一致视频生成",
+      "llm_tldr_en": "Video diffusion models fail to keep scene geometry consistent over time because cross-frame attention is unreliable. GAD distills correspondences from a frozen geometry model into video attention, improving long-range structural consistency.",
+      "llm_tldr_cn": "视频扩散模型虽能生成视觉上吸引人的短序列，但难以在时间上保持场景几何与物体结构一致，原因是跨帧注意力无法建立可靠对应。作者提出几何注意力蒸馏GAD，将冻结几何模型注意力中的跨帧对应关系迁移到视频注意力中，从而在同一静态表面或运动物体之间建立稳定关联。实验表明该方法显著改善了生成视频的长期结构与时序一致性，为一致性视频合成提供了通用的注意力监督手段。",
+      "llm_tldr": "视频扩散模型虽能生成视觉上吸引人的短序列，但难以在时间上保持场景几何与物体结构一致，原因是跨帧注意力无法建立可靠对应。作者提出几何注意力蒸馏GAD，将冻结几何模型注意力中的跨帧对应关系迁移到视频注意力中，从而在同一静态表面或运动物体之间建立稳定关联。实验表明该方法显著改善了生成视频的长期结构与时序一致性，为一致性视频合成提供了通用的注意力监督手段。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Generating temporally consistent stereoscopic video with high visual quality",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.23732v1",
+      "source": "arxiv",
+      "title": "ESC: Escaping 2D Diffusion Ambiguity with Geometric Constraints for Consistent Novel View Synthesis",
+      "abstract": "Generating 3D-consistent novel views from 2D diffusion models remains a fundamental challenge in computer vision. In this work, we introduce a framework that enhances geometric alignment for monocular view synthesis under drastic camera changes by jointly generating a target view and its corresponding depth map. By conditioning the diffusion pipeline on the single source image, source depth, and target camera rays, our approach forces the model to inherently reason in 3D space even under extreme viewpoint shifts. To guarantee spatial fidelity, we propose a novel per-pixel depth consistency constraint, which verifies and enforces 3D consistency across generated views. Our framework establishes a robust pipeline for geometrically consistent view synthesis, yielding superior visual accuracy and spatial alignment compared to current state-of-the-art methods. With this work, we pave the road towards robust 3D world models capable of understanding complex environments from a single view image.",
+      "authors": [
+        "Ge Ya Luo",
+        "Daniel Severo",
+        "Brian Karrer",
+        "Christopher Pal",
+        "Adriana Romero-Soriano",
+        "Michal Drozdzal"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-10-14T21:40:55+00:00",
+      "link": "https://arxiv.org/pdf/2610.23732v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "keyword:sia",
+        "query:Video-D-to-D",
+        "query:sia"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "monocular view synthesis with camera rays and depth consistency",
+      "llm_evidence_cn": "结合相机射线与深度一致性的单目视图合成",
+      "llm_evidence": "结合相机射线与深度一致性的单目视图合成",
+      "canonical_evidence": "结合相机射线与深度一致性的单目视图合成",
+      "llm_tldr_en": "ESC conditions a diffusion pipeline on a single source image, its depth and target camera rays to jointly generate a target view and depth map, enforcing per-pixel 3D consistency under drastic viewpoint changes.",
+      "llm_tldr_cn": "从二维扩散模型生成三维一致的新视图在剧烈相机变化下仍是难题。本文提出ESC框架，以单张源图像、源深度和目标相机射线为条件，联合生成目标视图及其深度图，使模型在极端视角变化下仍在三维空间中推理。方法还引入逐像素深度一致性约束以校验并强制跨视图的三维一致性。实验表明该框架在单目视图合成中显著提升了几何对齐与空间保真度，为单目到第二视图的合成提供了可借鉴路径。",
+      "llm_tldr": "从二维扩散模型生成三维一致的新视图在剧烈相机变化下仍是难题。本文提出ESC框架，以单张源图像、源深度和目标相机射线为条件，联合生成目标视图及其深度图，使模型在极端视角变化下仍在三维空间中推理。方法还引入逐像素深度一致性约束以校验并强制跨视图的三维一致性。实验表明该框架在单目视图合成中显著提升了几何对齐与空间保真度，为单目到第二视图的合成提供了可借鉴路径。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Synthesizing left-right views for stereoscopic video from monocular input",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.24506v1",
+      "source": "arxiv",
+      "title": "SAP-Depth: Scene-Adaptive Probability Framework for Self-Supervised Monocular Depth Estimation",
+      "abstract": "Self-supervised monocular depth estimation remains challenging due to the loss of fine-grained details and limited adaptability to varying scene structures. In this paper, we propose SAP-Depth, a novel architecture based on Scene-Adaptive Probabilistic. Unlike traditional methods, we introduce a Dynamic Bins mechanism powered by a Learnable Parameter Predictor, which adaptively estimates scene-specific depth distributions conditioned on the input image context. Furthermore, a Bin-wise Probability Distribution Decoder is designed to effectively fuse multi-scale representations to predict dense depth probability distributions, significantly enhancing boundary sharpness and structural recovery. Through the collaborative coupling of these proposed modules, our model achieves dynamic prediction of scene-specific depth distributions. Extensive experiments on the KITTI dataset show that SAP-Depth outperforms existing state-of-the-art methods in accuracy, particularly in its ability to better preserve complex edge details. Further, tests on the Make3D dataset validate the model's excellent generalization capability and robustness.",
+      "authors": [
+        "Bowen He",
+        "Li Zhang",
+        "Yujie Chen",
+        "Chang Cheng"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-10-17T07:07:26+00:00",
+      "link": "https://arxiv.org/pdf/2610.24506v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "keyword:sia",
+        "query:Video-D-to-D",
+        "query:sia"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "self-supervised monocular depth estimation usable for stereo pair generation",
+      "llm_evidence_cn": "可用于立体图像对生成的自监督单目深度估计",
+      "llm_evidence": "可用于立体图像对生成的自监督单目深度估计",
+      "canonical_evidence": "可用于立体图像对生成的自监督单目深度估计",
+      "llm_tldr_en": "SAP-Depth introduces dynamic bins with a learnable parameter predictor and a bin-wise probability decoder for scene-adaptive self-supervised monocular depth, sharpening boundaries and structure.",
+      "llm_tldr_cn": "针对自监督单目深度估计细节丢失、难以适应不同场景结构的问题，本文提出SAP-Depth场景自适应概率框架，引入动态分箱机制与可学习参数预测器，根据输入上下文自适应估计场景深度分布，并用分箱概率分布解码器融合多尺度特征预测稠密深度。实验表明该方法显著提升边界锐度与结构恢复能力，深度预测更精细，可为基于深度图的立体视图合成提供更可靠的几何基础。",
+      "llm_tldr": "针对自监督单目深度估计细节丢失、难以适应不同场景结构的问题，本文提出SAP-Depth场景自适应概率框架，引入动态分箱机制与可学习参数预测器，根据输入上下文自适应估计场景深度分布，并用分箱概率分布解码器融合多尺度特征预测稠密深度。实验表明该方法显著提升边界锐度与结构恢复能力，深度预测更精细，可为基于深度图的立体视图合成提供更可靠的几何基础。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Video depth estimation for stereo pair generation with high resolution and real time inference",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

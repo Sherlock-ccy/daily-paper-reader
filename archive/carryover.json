@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-19T23:17:10.803347+00:00",
-  "updated_date": "20261019",
+  "generated_at": "2026-10-20T22:09:17.342986+00:00",
+  "updated_date": "20261020",
   "carryover_days": 9,
   "tag_states": {
     "Video-D-to-D": {
-      "updated_date": "20261019",
+      "updated_date": "20261020",
       "carryover_days": 9,
       "items": []
     },
     "sia": {
-      "updated_date": "20261019",
+      "updated_date": "20261020",
       "carryover_days": 9,
       "items": []
     }
