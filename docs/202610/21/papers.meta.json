@@ -1,0 +1,54 @@
+{
+  "label": "2026-10-21",
+  "date": "2026-10-21",
+  "generated_at": "2026-10-21T21:59:23",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202610/21/2610.25276v1-holo4d-holistic-4d-reconstruction-as-geometric-control-for-video-diffusion",
+      "section": "quick",
+      "title_en": "Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion",
+      "authors": "Yushi Lan, Zeren Jiang, Koichi Namekata, Xingang Pan, Chuanxia Zheng, Andrea Vedaldi",
+      "date": "2026-10-18",
+      "pdf": "https://arxiv.org/pdf/2610.25276v1",
+      "score": "7.0",
+      "evidence": "单目视频新视角合成并补全新出现的遮挡区域",
+      "tldr": "单目视频重拍需在新相机轨迹下保持场景几何与运动，并补全新可见区域。Holo4D将前馈4D重建得到的3D轨迹投影到目标视角，作为整体4D scaffold，编码几何与源外观来引导预训练视频扩散模型。实验表明该轨迹条件能有效提升相机控制与新视角合成，且无需重训生成器即可兼容不同4D重建器。这为重建与扩散生成结合提供了可扩展的几何控制方案。",
+      "tags": "query:video-d-to-d",
+      "abstract_en": "Synthesizing a monocular video from a new camera trajectory requires preserving the observed scene geometry and motion while completing regions that become newly visible. Feed-forward 4D reconstructors recover the structure of the observed scene, whereas video diffusion models provide a generative prior for completing unseen content. We introduce Holo4D, a video reshooting framework that uses reconstructed 3D trajectories as a holistic source-view 4D scaffold. We project these trajectories into the requested views and encode their geometry and source appearance to guide a pretrained video diffusion model. Together with the source video and target cameras, the scaffold grounds generation in reconstructed observations while leaving unsupported regions to the generative prior. Experiments demonstrate the value of trajectory-based conditioning for camera control and novel-view synthesis. The framework accommodates different 4D reconstructors without retraining the video generator, allowing it to benefit from future advances in source reconstruction. More details can be found in our project page.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/21/2610.19732v1-controlling-the-latency-in-temporal-coded-spiking-models-for-neuromorphic-datasets",
+      "section": "quick",
+      "title_en": "Controlling the latency in temporal coded spiking models for neuromorphic datasets",
+      "authors": "Alban Gattepaille, Alexandre Muzy",
+      "date": "2026-10-14",
+      "pdf": "https://arxiv.org/pdf/2610.19732v1",
+      "score": "6.0",
+      "evidence": "面向神经形态数据集的TTFS时序脉冲编码",
+      "tldr": "时序脉冲模型在高时间依赖数据集上的表现仍待探索，TTFS等框架的延迟（正确分类所需时间）缺乏系统研究。本文聚焦直接计算神经元脉冲时间、绕过膜电位与阈值机制的Delay Neural Networks（DeNN），提出对延迟进行解析控制的方法。作者在动态时序数据集上实证考察延迟与精度的权衡，展示了可控延迟下的模型行为。该工作为时序脉冲模型的延迟调控与评估提供了分析框架和实验依据。",
+      "tags": "query:sia",
+      "abstract_en": "Exploiting temporal information in datasets with high temporal dependencies (such as spoken keyword recognition) by spiking models is still an open problem. Promising frameworks include Time-To-First coding (TTFS) and the inclusion of synaptic delays into learning. In TTFS, neurons are forced to spike at most once, forcing the network to found its learning on the spiking times of neurons rather than their spiking rate. Some models use the TTFS framework to directly compute the spiking time of Integrate-and-Fire (IF) or Leaky Integrate-and-Fire (LIF) neurons. However, most models built in the TTFS framework have not been tested against datasets containing temporal information. Little is known about the latency of these models on temporal datasets, where the latency is the time taken by the network to correctly classify a sample. In this work, we study the behaviour of Delay Neural Networks (DeNN) models, i.e. models that directly compute the spiking time of neurons by bypassing the membrane potential and thresholding mechanisms of spiking neurons. We show how to analytically control their latency, and empirically study the latency-accuracy tradeoff in a dynamic temporal dataset.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202610/21/2610.22083v1-beyond-the-hamming-cliff-compact-spatial-encodings-preserving-semantic-distance-in-spiking-neural-networks",
+      "section": "quick",
+      "title_en": "Beyond the Hamming Cliff: Compact Spatial Encodings Preserving Semantic Distance in Spiking Neural Networks",
+      "authors": "Sergio Davies, Muhammad Aitsam, Morgan-Tyler Stone, Alessandro Di Nuovo, Liangxiu Han",
+      "date": "2026-10-15",
+      "pdf": "https://arxiv.org/pdf/2610.22083v1",
+      "score": "6.0",
+      "evidence": "面向脉冲网络的输入脉冲编码方案",
+      "tldr": "标准二进制编码在脉冲神经网络中会造成语义与空间距离失配的“Hamming cliff”。该工作将Gray、Thermometer、Johnson及混合编码作为SpiNNaker网络输入预处理，用同步脉冲表示连续值以保持超低延迟。实验表明仅消除cliff不够：Gray缺乏全局距离结构，Thermometer/Johnson能保留语义距离但码宽随值域增长；混合编码以单参数统一三者，在较小码宽下恢复大部分结构。编码选择通过稳态容忍半径决定网络视为相似的值。",
+      "tags": "query:sia",
+      "abstract_en": "By pre-processing input signals with Gray, Thermometer, Johnson and hybrid encodings before passing them to spiking neural networks running on SpiNNaker hardware, Davies et al.(2025) address the semantic-spatial disparity that causes the ``Hamming cliff'' in standard binary representations. Continuous semantic patterns are presented as a set of simultaneous spikes at the input layer, preserving ultra-low latency processing. Training the network on multiple continuous values under each scheme, and measuring accuracy, required homeostatic scaling and false-positive rates, shows that removing the cliff is necessary but not sufficient: Gray encoding removes it yet retains little global distance structure, whereas Thermometer and Johnson preserve semantic distance at a code width that grows with the value range. The proposed hybrid encodings contain all three as limiting cases of a single parameter, recovering most of that structure at a fraction of the width. The homeostatic factor is shown to set a radius of tolerance around each trained pattern, so that the choice of encoding alone decides which values the network treats as similar.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

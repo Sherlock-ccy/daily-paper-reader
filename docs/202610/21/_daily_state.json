@@ -1,0 +1,57 @@
+{
+  "date": "20261021",
+  "date_label": "",
+  "generated_at": "2026-10-21 21:59:22 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2610.25276v1",
+      "route": "202610/21/2610.25276v1-holo4d-holistic-4d-reconstruction-as-geometric-control-for-video-diffusion",
+      "title": "Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "单目视频新视角合成并补全新出现的遮挡区域",
+      "first_seen_at": "2026-10-21 21:59:22 UTC",
+      "updated_at": "2026-10-21 21:59:22 UTC"
+    },
+    {
+      "paper_id": "2610.19732v1",
+      "route": "202610/21/2610.19732v1-controlling-the-latency-in-temporal-coded-spiking-models-for-neuromorphic-datasets",
+      "title": "Controlling the latency in temporal coded spiking models for neuromorphic datasets",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "sia"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "面向神经形态数据集的TTFS时序脉冲编码",
+      "first_seen_at": "2026-10-21 21:59:22 UTC",
+      "updated_at": "2026-10-21 21:59:22 UTC"
+    },
+    {
+      "paper_id": "2610.22083v1",
+      "route": "202610/21/2610.22083v1-beyond-the-hamming-cliff-compact-spatial-encodings-preserving-semantic-distance-in-spiking-neural-networks",
+      "title": "Beyond the Hamming Cliff: Compact Spatial Encodings Preserving Semantic Distance in Spiking Neural Networks",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "sia"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "面向脉冲网络的输入脉冲编码方案",
+      "first_seen_at": "2026-10-21 21:59:22 UTC",
+      "updated_at": "2026-10-21 21:59:22 UTC"
+    }
+  ]
+}

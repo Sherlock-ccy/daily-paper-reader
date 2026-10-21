@@ -48,7 +48,7 @@
 <section class="dpr-home-dashboard-card dpr-home-report-card">
   <div class="dpr-home-dashboard-header">
     <div>
-      <span class="dpr-home-dashboard-kicker">2026-10-20</span>
+      <span class="dpr-home-dashboard-kicker">2026-10-21</span>
       <h3 class="dpr-home-dashboard-title">今日汇总</h3>
     </div>
     <strong class="dpr-home-dashboard-count">共 3 篇</strong>
@@ -58,7 +58,7 @@
     <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>0</dd></div>
     <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>3</dd></div>
   </dl>
-  <p class="dpr-home-dashboard-body">最近更新：2026-10-20 22:10:20 UTC<br>状态：成功</p>
+  <p class="dpr-home-dashboard-body">最近更新：2026-10-21 21:59:22 UTC<br>状态：成功</p>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-brief-card">
   <div class="dpr-home-dashboard-header">
@@ -69,7 +69,7 @@
     <strong class="dpr-home-dashboard-count">AI</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<p>今日速读3篇视频生成与三维视觉论文，均分6.0，尚无精读。最值得关注：GAD用几何注意力蒸馏提升视频生成一致性，ESC用几何约束缓解2D扩散歧义，以改善新视角合成。普通读者可先看这两篇摘要，判断是否纳入精读。</p>
+<p>今日速读 3 篇，均获 6 分以上，涵盖 4D 重建与视频生成控制、脉冲神经网络延迟控制、脉冲编码语义距离保持。最值得关注 Holo4D 用整体 4D 重建做几何控制、提升视频扩散一致性，以及脉冲模型面向神经形态数据的低延迟调控思路。普通读者可先看 Holo4D 的“几何控制”思路，再按需了解脉冲编码如何减少语义失真。</p>
   </div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-deep-card">
@@ -94,9 +94,9 @@
     <strong class="dpr-home-dashboard-count">3 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="GAD: Geometry Attention Distillation for Consistent Video Generation">GAD: Geometry Attention Distillation for Consistent Video Generation</span></li><li><span class="dpr-home-dashboard-paper-title" title="ESC: Escaping 2D Diffusion Ambiguity with Geometric Constraints for Consistent Novel View Synthesis">ESC: Escaping 2D Diffusion Ambiguity with Geometric Constraints for Consistent Novel View Synthesis</span></li><li><span class="dpr-home-dashboard-paper-title" title="SAP-Depth: Scene-Adaptive Probability Framework for Self-Supervised Monocular Depth Estimation">SAP-Depth: Scene-Adaptive Probability Framework for Self-Supervised Monocular Depth Estimation</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion">Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion</span></li><li><span class="dpr-home-dashboard-paper-title" title="Controlling the latency in temporal coded spiking models for neuromorphic datasets">Controlling the latency in temporal coded spiking models for neuromorphic datasets</span></li><li><span class="dpr-home-dashboard-paper-title" title="Beyond the Hamming Cliff: Compact Spatial Encodings Preserving Semantic Distance in Spiking Neural Networks">Beyond the Hamming Cliff: Compact Spatial Encodings Preserving Semantic Distance in Spiking Neural Networks</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">video-d-to-d <strong>3</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">sia <strong>2</strong></span><span class="dpr-home-dashboard-tag">video-d-to-d <strong>1</strong></span></div>
 </section>
 </div>
 

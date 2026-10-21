@@ -1,0 +1,134 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-21T21:58:50.953257+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 2,
+    "deep_divecandidates": 0,
+    "deep_cap": 7,
+    "deep_selected": 0,
+    "quick_candidates": 3,
+    "quick_skim_target": 12,
+    "quick_selected": 3
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2610.25276v1",
+      "source": "arxiv",
+      "title": "Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion",
+      "abstract": "Synthesizing a monocular video from a new camera trajectory requires preserving the observed scene geometry and motion while completing regions that become newly visible. Feed-forward 4D reconstructors recover the structure of the observed scene, whereas video diffusion models provide a generative prior for completing unseen content. We introduce Holo4D, a video reshooting framework that uses reconstructed 3D trajectories as a holistic source-view 4D scaffold. We project these trajectories into the requested views and encode their geometry and source appearance to guide a pretrained video diffusion model. Together with the source video and target cameras, the scaffold grounds generation in reconstructed observations while leaving unsupported regions to the generative prior. Experiments demonstrate the value of trajectory-based conditioning for camera control and novel-view synthesis. The framework accommodates different 4D reconstructors without retraining the video generator, allowing it to benefit from future advances in source reconstruction. More details can be found in our project page.",
+      "authors": [
+        "Yushi Lan",
+        "Zeren Jiang",
+        "Koichi Namekata",
+        "Xingang Pan",
+        "Chuanxia Zheng",
+        "Andrea Vedaldi"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-10-18T13:47:01+00:00",
+      "link": "https://arxiv.org/pdf/2610.25276v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "keyword:sia",
+        "query:Video-D-to-D",
+        "query:sia"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "new-view video synthesis from monocular input with completion of newly visible disoccluded regions",
+      "llm_evidence_cn": "单目视频新视角合成并补全新出现的遮挡区域",
+      "llm_evidence": "单目视频新视角合成并补全新出现的遮挡区域",
+      "canonical_evidence": "单目视频新视角合成并补全新出现的遮挡区域",
+      "llm_tldr_en": "Holo4D uses reconstructed 4D trajectories projected into target views as a geometric scaffold to guide video diffusion, preserving observed geometry while filling regions newly visible from the new camera.",
+      "llm_tldr_cn": "针对从单目视频合成新相机轨迹画面时需保持已观测几何与运动、同时补全新可见区域的问题，本文提出Holo4D，利用前馈四维重建器恢复场景结构，将三维轨迹投影到目标视角构成四维脚手架，编码其几何与源外观以引导预训练视频扩散模型。该方法在重建观测处保持几何一致，在无支撑区域由生成先验补全，为单目输入的新视角视频合成与去遮挡填补提供了有效路径。",
+      "llm_tldr": "针对从单目视频合成新相机轨迹画面时需保持已观测几何与运动、同时补全新可见区域的问题，本文提出Holo4D，利用前馈四维重建器恢复场景结构，将三维轨迹投影到目标视角构成四维脚手架，编码其几何与源外观以引导预训练视频扩散模型。该方法在重建观测处保持几何一致，在无支撑区域由生成先验补全，为单目输入的新视角视频合成与去遮挡填补提供了有效路径。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Inpainting disoccluded and occluded regions in stereo video synthesis",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2610.19732v1",
+      "source": "arxiv",
+      "title": "Controlling the latency in temporal coded spiking models for neuromorphic datasets",
+      "abstract": "Exploiting temporal information in datasets with high temporal dependencies (such as spoken keyword recognition) by spiking models is still an open problem. Promising frameworks include Time-To-First coding (TTFS) and the inclusion of synaptic delays into learning. In TTFS, neurons are forced to spike at most once, forcing the network to found its learning on the spiking times of neurons rather than their spiking rate. Some models use the TTFS framework to directly compute the spiking time of Integrate-and-Fire (IF) or Leaky Integrate-and-Fire (LIF) neurons. However, most models built in the TTFS framework have not been tested against datasets containing temporal information. Little is known about the latency of these models on temporal datasets, where the latency is the time taken by the network to correctly classify a sample. In this work, we study the behaviour of Delay Neural Networks (DeNN) models, i.e. models that directly compute the spiking time of neurons by bypassing the membrane potential and thresholding mechanisms of spiking neurons. We show how to analytically control their latency, and empirically study the latency-accuracy tradeoff in a dynamic temporal dataset.",
+      "authors": [
+        "Alban Gattepaille",
+        "Alexandre Muzy"
+      ],
+      "primary_category": "cs.NE",
+      "categories": [
+        "cs.NE"
+      ],
+      "published": "2026-10-14T07:53:52+00:00",
+      "link": "https://arxiv.org/pdf/2610.19732v1",
+      "tags": [
+        "keyword:sia",
+        "query:sia"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "TTFS temporal spike coding for neuromorphic datasets",
+      "llm_evidence_cn": "面向神经形态数据集的TTFS时序脉冲编码",
+      "llm_evidence": "面向神经形态数据集的TTFS时序脉冲编码",
+      "canonical_evidence": "面向神经形态数据集的TTFS时序脉冲编码",
+      "llm_tldr_en": "This work studies latency in time-to-first-spike temporal coding with synaptic delays, testing spiking models on datasets with strong temporal dependencies.",
+      "llm_tldr_cn": "针对脉冲模型在高时序依赖数据上难以利用时间信息的问题，论文研究TTFS时间编码与突触延迟学习框架，分析以脉冲发放时刻而非发放率承载信息的方式。作者构建直接计算IF与LIF神经元脉冲时刻的模型，并系统考察其在含时间信息的神经形态数据集上的延迟表现。结果显示该类时序编码模型的延迟特性可被刻画与调控。该工作为神经形态视觉中的时序脉冲编码与低延迟推理提供了参考。",
+      "llm_tldr": "针对脉冲模型在高时序依赖数据上难以利用时间信息的问题，论文研究TTFS时间编码与突触延迟学习框架，分析以脉冲发放时刻而非发放率承载信息的方式。作者构建直接计算IF与LIF神经元脉冲时刻的模型，并系统考察其在含时间信息的神经形态数据集上的延迟表现。结果显示该类时序编码模型的延迟特性可被刻画与调控。该工作为神经形态视觉中的时序脉冲编码与低延迟推理提供了参考。",
+      "llm_tags": [
+        "query:sia"
+      ],
+      "matched_query_tag": "query:sia",
+      "matched_query_text": "Static image to spike encoding with rate coding and temporal coding for neuromorphic vision",
+      "matched_requirement_id": "req-11",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2610.22083v1",
+      "source": "arxiv",
+      "title": "Beyond the Hamming Cliff: Compact Spatial Encodings Preserving Semantic Distance in Spiking Neural Networks",
+      "abstract": "By pre-processing input signals with Gray, Thermometer, Johnson and hybrid encodings before passing them to spiking neural networks running on SpiNNaker hardware, Davies et al.(2025) address the semantic-spatial disparity that causes the ``Hamming cliff'' in standard binary representations. Continuous semantic patterns are presented as a set of simultaneous spikes at the input layer, preserving ultra-low latency processing. Training the network on multiple continuous values under each scheme, and measuring accuracy, required homeostatic scaling and false-positive rates, shows that removing the cliff is necessary but not sufficient: Gray encoding removes it yet retains little global distance structure, whereas Thermometer and Johnson preserve semantic distance at a code width that grows with the value range. The proposed hybrid encodings contain all three as limiting cases of a single parameter, recovering most of that structure at a fraction of the width. The homeostatic factor is shown to set a radius of tolerance around each trained pattern, so that the choice of encoding alone decides which values the network treats as similar.",
+      "authors": [
+        "Sergio Davies",
+        "Muhammad Aitsam",
+        "Morgan-Tyler Stone",
+        "Alessandro Di Nuovo",
+        "Liangxiu Han"
+      ],
+      "primary_category": "cs.NE",
+      "categories": [
+        "cs.NE"
+      ],
+      "published": "2026-10-15T15:38:51+00:00",
+      "link": "https://arxiv.org/pdf/2610.22083v1",
+      "tags": [
+        "keyword:sia",
+        "query:sia"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "input spike encoding schemes preserving semantic distance for SNNs",
+      "llm_evidence_cn": "面向脉冲网络的输入脉冲编码方案",
+      "llm_evidence": "面向脉冲网络的输入脉冲编码方案",
+      "canonical_evidence": "面向脉冲网络的输入脉冲编码方案",
+      "llm_tldr_en": "The paper compares Gray, Thermometer, Johnson and hybrid input encodings for spiking networks on SpiNNaker, showing that removing the Hamming cliff alone is insufficient without preserving global distance structure.",
+      "llm_tldr_cn": "针对标准二进制编码在脉冲神经网络中产生汉明悬崖、破坏连续语义距离的问题，本文系统比较Gray、温度计、Johnson及混合等输入编码方案，在SpiNNaker硬件上训练网络并测量准确率、稳态缩放需求与误报率。结果表明消除悬崖是必要但不充分的，温度计类编码因保留全局距离结构而更优。该工作为神经形态视觉中的静态输入到脉冲编码设计提供了实证依据。",
+      "llm_tldr": "针对标准二进制编码在脉冲神经网络中产生汉明悬崖、破坏连续语义距离的问题，本文系统比较Gray、温度计、Johnson及混合等输入编码方案，在SpiNNaker硬件上训练网络并测量准确率、稳态缩放需求与误报率。结果表明消除悬崖是必要但不充分的，温度计类编码因保留全局距离结构而更优。该工作为神经形态视觉中的静态输入到脉冲编码设计提供了实证依据。",
+      "llm_tags": [
+        "query:sia"
+      ],
+      "matched_query_tag": "query:sia",
+      "matched_query_text": "Static image to spike encoding with rate coding and temporal coding for neuromorphic vision",
+      "matched_requirement_id": "req-11",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
