@@ -48,17 +48,17 @@
 <section class="dpr-home-dashboard-card dpr-home-report-card">
   <div class="dpr-home-dashboard-header">
     <div>
-      <span class="dpr-home-dashboard-kicker">2026-10-21</span>
+      <span class="dpr-home-dashboard-kicker">2026-10-22</span>
       <h3 class="dpr-home-dashboard-title">今日汇总</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">共 3 篇</strong>
+    <strong class="dpr-home-dashboard-count">共 1 篇</strong>
   </div>
   <dl class="dpr-home-dashboard-stats">
     <div class="dpr-home-dashboard-stat"><dt>累计更新</dt><dd>1 次</dd></div>
     <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>0</dd></div>
-    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>3</dd></div>
+    <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>1</dd></div>
   </dl>
-  <p class="dpr-home-dashboard-body">最近更新：2026-10-21 21:59:22 UTC<br>状态：成功</p>
+  <p class="dpr-home-dashboard-body">最近更新：2026-10-22 22:28:45 UTC<br>状态：成功</p>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-brief-card">
   <div class="dpr-home-dashboard-header">
@@ -69,7 +69,7 @@
     <strong class="dpr-home-dashboard-count">AI</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<p>今日速读 3 篇，均获 6 分以上，涵盖 4D 重建与视频生成控制、脉冲神经网络延迟控制、脉冲编码语义距离保持。最值得关注 Holo4D 用整体 4D 重建做几何控制、提升视频扩散一致性，以及脉冲模型面向神经形态数据的低延迟调控思路。普通读者可先看 Holo4D 的“几何控制”思路，再按需了解脉冲编码如何减少语义失真。</p>
+<p>今日完成 1 篇速读，聚焦 GeoV2V 这一基于几何约束的视频扩散驾驶场景生成模型（6.0/10）。最值得关注的是：它用几何信息引导扩散生成，使驾驶视频更符合道路结构，并可能提升场景一致性；建议普通读者先看摘要和可视化结果，判断其生成场景的真实感与几何准确性，再决定是否深入方法细节。</p>
   </div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-deep-card">
@@ -91,12 +91,12 @@
       <span class="dpr-home-dashboard-kicker">今日累计</span>
       <h3 class="dpr-home-dashboard-title">速读推荐</h3>
     </div>
-    <strong class="dpr-home-dashboard-count">3 篇</strong>
+    <strong class="dpr-home-dashboard-count">1 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion">Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion</span></li><li><span class="dpr-home-dashboard-paper-title" title="Controlling the latency in temporal coded spiking models for neuromorphic datasets">Controlling the latency in temporal coded spiking models for neuromorphic datasets</span></li><li><span class="dpr-home-dashboard-paper-title" title="Beyond the Hamming Cliff: Compact Spatial Encodings Preserving Semantic Distance in Spiking Neural Networks">Beyond the Hamming Cliff: Compact Spatial Encodings Preserving Semantic Distance in Spiking Neural Networks</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation">GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation</span></li></ul>
   </div>
-  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">sia <strong>2</strong></span><span class="dpr-home-dashboard-tag">video-d-to-d <strong>1</strong></span></div>
+  <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">video-d-to-d <strong>1</strong></span></div>
 </section>
 </div>
 

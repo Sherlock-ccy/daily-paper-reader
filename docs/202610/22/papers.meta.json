@@ -1,0 +1,24 @@
+{
+  "label": "2026-10-22",
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T22:28:46",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202610/22/2610.25245v1-geov2v-geometry-grounded-video-diffusion-model-for-driving-scene-generation",
+      "section": "quick",
+      "title_en": "GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation",
+      "authors": "Yuchen Xi, Yuhan Guo, Chenwei Hou, Zixu Liu, Jin Fang, Jason Liu, Ruigang Yang",
+      "date": "2026-10-18",
+      "pdf": "https://arxiv.org/pdf/2610.25245v1",
+      "score": "6.0",
+      "evidence": "结合深度先验与时序一致的新视角合成",
+      "tldr": "轨迹变化下的新视角合成对自动驾驶仿真很关键，但现有方法在车道偏移等未见视角易出现画质下降或几何/时序不一致。GeoV2V 将 LiDAR 与深度几何先验注入 Wan 2.1 视频扩散骨干，并以全视频条件生成沿新轨迹的时序一致驾驶视频。针对跨车道监督缺失，作者构建同步多车道视频数据集 Para4D 提供显式训练先验。在 Waymo、nuScenes 和 Para4D 上，其视觉质量、几何一致性与大轨迹偏移鲁棒性达到领先。",
+      "tags": "query:video-d-to-d",
+      "abstract_en": "Novel view synthesis under trajectory changes is essential for autonomous driving simulation, yet existing methods struggle to generate consistent videos when extrapolating to unseen viewpoints such as lane shifts. Reconstruction-based approaches maintain geometric consistency but degrade in visual quality under large viewpoint changes, while reconstruct-then-restore methods often produce visually plausible frames yet suffer from geometric and temporal inconsistencies. We present GeoV2V, a geometry-grounded video-to-video diffusion framework that synthesizes temporally coherent driving videos along novel trajectories by integrating LiDAR and depth-derived geometric priors with full-video conditioning in the Wan 2.1 backbone. A key challenge in learning cross-lane transformations is the lack of synchronized multi-trajectory supervision in real-world datasets. To address this, we also introduce Para4D, a synthetic dataset capturing synchronized multi-lane driving videos within dynamic scenes, which provides explicit supervision for lane-shift generation and serves as a strong training prior for geometry-consistent view synthesis. Experiments on Waymo, nuScenes, and Para4D demonstrate state-of-the-art performance in visual quality, geometric consistency, and robustness to complex lighting dynamics under large trajectory shifts. Project page: https://xiyuche.github.io/GeoV2V/",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
