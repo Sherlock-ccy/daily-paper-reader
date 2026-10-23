@@ -1,0 +1,25 @@
+{
+  "date": "20261023",
+  "date_label": "",
+  "generated_at": "2026-10-23 22:27:38 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2610.27594v1",
+      "route": "202610/23/2610.27594v1-causal-spatiotemporal-state-evolution-for-monocular-4d-reconstruction",
+      "title": "Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "video-d-to-d"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "单目视频的几何与时序一致状态估计",
+      "first_seen_at": "2026-10-23 22:27:38 UTC",
+      "updated_at": "2026-10-23 22:27:38 UTC"
+    }
+  ]
+}

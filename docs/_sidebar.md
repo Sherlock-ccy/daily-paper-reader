@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-10-23 <!--dpr-date:20261023-->
+    * 速读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202610/23/2610.27594v1-causal-spatiotemporal-state-evolution-for-monocular-4d-reconstruction" data-sidebar-item="{&quot;title&quot;: &quot;Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2610.27594v1-causal-spatiotemporal-state-evolution-for-monocular-4d-reconstruction&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;video-d-to-d&quot;}], &quot;evidence&quot;: &quot;单目视频的几何与时序一致状态估计&quot;}">Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction</a>
   * 2026-10-22 <!--dpr-date:20261022-->
     * 速读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202610/22/2610.25245v1-geov2v-geometry-grounded-video-diffusion-model-for-driving-scene-generation" data-sidebar-item="{&quot;title&quot;: &quot;GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2610.25245v1-geov2v-geometry-grounded-video-diffusion-model-for-driving-scene-generation&quot;, &quot;score&quot;: &quot;6.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;video-d-to-d&quot;}], &quot;evidence&quot;: &quot;结合深度先验与时序一致的新视角合成&quot;}">GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation</a>

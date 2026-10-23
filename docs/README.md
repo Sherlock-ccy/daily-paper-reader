@@ -48,7 +48,7 @@
 <section class="dpr-home-dashboard-card dpr-home-report-card">
   <div class="dpr-home-dashboard-header">
     <div>
-      <span class="dpr-home-dashboard-kicker">2026-10-22</span>
+      <span class="dpr-home-dashboard-kicker">2026-10-23</span>
       <h3 class="dpr-home-dashboard-title">今日汇总</h3>
     </div>
     <strong class="dpr-home-dashboard-count">共 1 篇</strong>
@@ -58,7 +58,7 @@
     <div class="dpr-home-dashboard-stat"><dt>精读</dt><dd>0</dd></div>
     <div class="dpr-home-dashboard-stat"><dt>速读</dt><dd>1</dd></div>
   </dl>
-  <p class="dpr-home-dashboard-body">最近更新：2026-10-22 22:28:45 UTC<br>状态：成功</p>
+  <p class="dpr-home-dashboard-body">最近更新：2026-10-23 22:27:38 UTC<br>状态：成功</p>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-brief-card">
   <div class="dpr-home-dashboard-header">
@@ -69,7 +69,7 @@
     <strong class="dpr-home-dashboard-count">AI</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<p>今日完成 1 篇速读，聚焦 GeoV2V 这一基于几何约束的视频扩散驾驶场景生成模型（6.0/10）。最值得关注的是：它用几何信息引导扩散生成，使驾驶视频更符合道路结构，并可能提升场景一致性；建议普通读者先看摘要和可视化结果，判断其生成场景的真实感与几何准确性，再决定是否深入方法细节。</p>
+<p>今日筛选 1 篇、精读 0 篇，仅速读《Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction》（6.0/10）。值得关注的是该文尝试用因果时空状态演化解决单目 4D 重建。建议普通读者先看摘要与实验部分，再决定是否深读。</p>
   </div>
 </section>
 <section class="dpr-home-dashboard-card dpr-home-deep-card">
@@ -94,7 +94,7 @@
     <strong class="dpr-home-dashboard-count">1 篇</strong>
   </div>
   <div class="dpr-home-dashboard-body">
-<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation">GeoV2V: Geometry-Grounded Video Diffusion Model for Driving Scene Generation</span></li></ul>
+<ul class="dpr-home-dashboard-paper-list"><li><span class="dpr-home-dashboard-paper-title" title="Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction">Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction</span></li></ul>
   </div>
   <div class="dpr-home-dashboard-tags"><span class="dpr-home-dashboard-tag">video-d-to-d <strong>1</strong></span></div>
 </section>

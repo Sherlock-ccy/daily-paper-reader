@@ -1,0 +1,60 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-10-23T22:27:16.531140+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 2,
+    "deep_divecandidates": 0,
+    "deep_cap": 7,
+    "deep_selected": 0,
+    "quick_candidates": 1,
+    "quick_skim_target": 12,
+    "quick_selected": 1
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2610.27594v1",
+      "source": "arxiv",
+      "title": "Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction",
+      "abstract": "While feed-forward models excel in static 3D geometry estimation, extending them to dynamic 4D scenes requires modeling visual geometry as a causally evolving state. Current methods typically rely on unordered temporal aggregation, which lacks the directional structure of physical time. Furthermore, existing supervision often treats geometry and motion as disjoint objectives, failing to exploit their inherent physical coupling. Consequently, they lack a unified constraint to effectively supervise temporal state transitions, leading to inconsistent 4D scene representations. To address this, we propose a feed-forward framework for causal 4D visual geometry learning from monocular videos. At its core, Causal Spatiotemporal Mamba augments temporal aggregation with directional state propagation. Through complementary Temporal-Spatial and Spatial-Temporal Scans, CSM continuously propagates geometry-aware states across frames to model spatiotemporal evolution. To align this causal state evolution with observable dynamics, we introduce Unified Motion Supervision. Rather than treating motion as an independent objective, UMS leverages geometry-aware predictions from the camera and depth heads to construct a unified forward motion field that is consistent with the underlying 3D structure. This geometry-grounded supervision explicitly constrains inter-frame state transitions, enabling stable states propagation across frames. Extensive evaluations on dynamic benchmarks demonstrate state-of-the-art performance across video depth, camera pose, and optical flow estimation. These results validate that the synergy between the directional state propagation of Causal Spatiotemporal Mamba and Unified Motion Supervision effectively captures continuous scene evolution, significantly reducing temporal drift and reinforcing spatial-temporal consistency in 4D representation learning.",
+      "authors": [
+        "Qiaowei Miao",
+        "Yijing Guo",
+        "Lipei Zhang",
+        "Qifeng Cheng",
+        "Yuru Xiao",
+        "Ziqian Ni",
+        "Sheng Yang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-10-20T04:00:48+00:00",
+      "link": "https://arxiv.org/pdf/2610.27594v1",
+      "tags": [
+        "keyword:Video-D-to-D",
+        "keyword:sia",
+        "query:Video-D-to-D",
+        "query:sia"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "monocular video geometry and temporally consistent depth-like state estimation",
+      "llm_evidence_cn": "单目视频的几何与时序一致状态估计",
+      "llm_evidence": "单目视频的几何与时序一致状态估计",
+      "canonical_evidence": "单目视频的几何与时序一致状态估计",
+      "llm_tldr_en": "Causal Spatiotemporal State Evolution learns causal 4D geometry from monocular video with a Causal Spatiotemporal Mamba and unified geometry-motion supervision, yielding temporally consistent 4D scene representations.",
+      "llm_tldr_cn": "针对单目动态场景重建中时序聚合无序、几何与运动监督割裂导致4D表示不一致的问题，论文提出前馈式因果4D视觉几何学习框架，核心是因果时空Mamba模块，按物理时间方向增强时序聚合，并以统一约束监督状态转移。实验表明该方法能获得更一致的4D场景表示。该工作为单目视频的时序一致深度与几何估计提供了可迁移方案，对深度驱动的立体视图合成具有支撑价值。",
+      "llm_tldr": "针对单目动态场景重建中时序聚合无序、几何与运动监督割裂导致4D表示不一致的问题，论文提出前馈式因果4D视觉几何学习框架，核心是因果时空Mamba模块，按物理时间方向增强时序聚合，并以统一约束监督状态转移。实验表明该方法能获得更一致的4D场景表示。该工作为单目视频的时序一致深度与几何估计提供了可迁移方案，对深度驱动的立体视图合成具有支撑价值。",
+      "llm_tags": [
+        "query:video-d-to-d"
+      ],
+      "matched_query_tag": "query:video-d-to-d",
+      "matched_query_text": "Video depth estimation for stereo pair generation with high resolution and real time inference",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}

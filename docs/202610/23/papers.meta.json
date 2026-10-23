@@ -1,0 +1,24 @@
+{
+  "label": "2026-10-23",
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23T22:27:39",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202610/23/2610.27594v1-causal-spatiotemporal-state-evolution-for-monocular-4d-reconstruction",
+      "section": "quick",
+      "title_en": "Causal Spatiotemporal State Evolution for Monocular 4D Reconstruction",
+      "authors": "Qiaowei Miao, Yijing Guo, Lipei Zhang, Qifeng Cheng, Yuru Xiao, Ziqian Ni, Sheng Yang",
+      "date": "2026-10-20",
+      "pdf": "https://arxiv.org/pdf/2610.27594v1",
+      "score": "6.0",
+      "evidence": "单目视频的几何与时序一致状态估计",
+      "tldr": "单目视频4D重建需要把视觉几何建模为随时间因果演化的状态，但现有方法多采用无序时间聚合，且几何与运动监督彼此割裂，容易产生时序漂移。本文提出前馈框架，以因果时空Mamba（CSM）通过互补时空扫描传播几何感知状态，并用统一运动监督（UMS）构建几何一致运动场来约束帧间转移。在动态基准上，视频深度、相机位姿与光流估计均达到SOTA。该工作以因果状态演化与统一运动监督提升4D表示的时空一致性。",
+      "tags": "query:video-d-to-d",
+      "abstract_en": "While feed-forward models excel in static 3D geometry estimation, extending them to dynamic 4D scenes requires modeling visual geometry as a causally evolving state. Current methods typically rely on unordered temporal aggregation, which lacks the directional structure of physical time. Furthermore, existing supervision often treats geometry and motion as disjoint objectives, failing to exploit their inherent physical coupling. Consequently, they lack a unified constraint to effectively supervise temporal state transitions, leading to inconsistent 4D scene representations. To address this, we propose a feed-forward framework for causal 4D visual geometry learning from monocular videos. At its core, Causal Spatiotemporal Mamba augments temporal aggregation with directional state propagation. Through complementary Temporal-Spatial and Spatial-Temporal Scans, CSM continuously propagates geometry-aware states across frames to model spatiotemporal evolution. To align this causal state evolution with observable dynamics, we introduce Unified Motion Supervision. Rather than treating motion as an independent objective, UMS leverages geometry-aware predictions from the camera and depth heads to construct a unified forward motion field that is consistent with the underlying 3D structure. This geometry-grounded supervision explicitly constrains inter-frame state transitions, enabling stable states propagation across frames. Extensive evaluations on dynamic benchmarks demonstrate state-of-the-art performance across video depth, camera pose, and optical flow estimation. These results validate that the synergy between the directional state propagation of Causal Spatiotemporal Mamba and Unified Motion Supervision effectively captures continuous scene evolution, significantly reducing temporal drift and reinforcing spatial-temporal consistency in 4D representation learning.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}
